@@ -207,14 +207,18 @@ Create `app-ingress.yaml`:
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: my-app-ingress
+  name: ur-voip-app-ingress
   namespace: production
   annotations:
     kubernetes.io/ingress.class: "nginx"
     cert-manager.io/cluster-issuer: "letsencrypt-prod"
     nginx.ingress.kubernetes.io/ssl-redirect: "true"
     nginx.ingress.kubernetes.io/force-ssl-redirect: "true"
+    nginx.ingress.kubernetes.io/affinity: "cookie"
+    nginx.ingress.kubernetes.io/session-cookie-name: "JSESSIONID"
+    nginx.ingress.kubernetes.io/session-cookie-path: "/"
 spec:
+  ingressClassName: nginx
   tls:
     - hosts:
         - app.ur-voip.com
@@ -227,9 +231,10 @@ spec:
             pathType: Prefix
             backend:
               service:
-                name: my-app-service
+                name: test
                 port:
                   number: 80
+
 ```
 
 Apply and verify:
