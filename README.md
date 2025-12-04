@@ -94,6 +94,10 @@ helm install ingress-nginx ingress-nginx/ingress-nginx \
 # Get LoadBalancer external IP
 kubectl get svc -n ingress-nginx
 ```
+<img width="933" height="143" alt="image" src="https://github.com/user-attachments/assets/2ce23468-51d1-442e-a3f7-7dec6165a6dc" />
+<img width="753" height="205" alt="image" src="https://github.com/user-attachments/assets/8d7752e4-fcd5-4894-a500-5a5379078d30" />
+<img width="789" height="552" alt="image" src="https://github.com/user-attachments/assets/41d30d08-ad6a-473f-8fba-3bdf2e568f11" />
+
 
 ---
 
