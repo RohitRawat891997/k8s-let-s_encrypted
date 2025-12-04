@@ -92,7 +92,7 @@ helm install ingress-nginx ingress-nginx/ingress-nginx \
 kubectl get svc -n ingress-nginx
 ```
 <img width="933" height="143" alt="image" src="https://github.com/user-attachments/assets/2ce23468-51d1-442e-a3f7-7dec6165a6dc" />
-<img width="571" height="181" alt="image" src="https://github.com/user-attachments/assets/98fb03dc-da0d-43e1-b070-4fc92ef31fbd" />
+<img width="749" height="221" alt="image" src="https://github.com/user-attachments/assets/99c3ef5f-3d4b-461b-89db-d70422144818" />
 <img width="789" height="552" alt="image" src="https://github.com/user-attachments/assets/41d30d08-ad6a-473f-8fba-3bdf2e568f11" />
 
 
