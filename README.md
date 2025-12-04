@@ -196,6 +196,7 @@ Apply:
 kubectl apply -f app-deploy.yaml
 kubectl get all -n production
 ```
+<img width="924" height="378" alt="image" src="https://github.com/user-attachments/assets/8f1b7923-b2e8-4942-a126-77a7ca196684" />
 
 ---
 
@@ -244,3 +245,6 @@ kubectl apply -f app-ingress.yaml
 kubectl get ingress -n production
 kubectl describe ingress my-app-ingress -n production
 ```
+<img width="878" height="340" alt="image" src="https://github.com/user-attachments/assets/5dc6f3f6-39cb-42fd-84d6-ed56ab17f223" />
+
+<img width="959" height="365" alt="image" src="https://github.com/user-attachments/assets/af0d1f04-637b-46ae-b584-878143303eec" />
